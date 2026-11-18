@@ -1,0 +1,11 @@
+Este es el contenido del repositorio que debe llamarse EXACTAMENTE  TU-USUARIO.github.io
+(público, con Pages activado en main / root). No contiene la app; solo el archivo que
+permite a Android confirmar que la APK de VALYRA es dueña de tu página y así quitar la
+barra con "compartir" y los tres puntitos.
+
+1. Edita .well-known/assetlinks.json: pon tu package_name y tu SHA-256 (de signing-key-info.txt).
+   Si PWABuilder te dio su propio assetlinks.json, reemplaza este archivo por ese.
+2. Sube .nojekyll y la carpeta .well-known a la raíz del repositorio.
+3. Comprueba que abre: https://TU-USUARIO.github.io/.well-known/assetlinks.json
+4. Verificación oficial de Google (cambia TU-USUARIO):
+   https://digitalassetlinks.googleapis.com/v1/statements:list?source.web.site=https://TU-USUARIO.github.io&relation=delegate_permission/common.handle_all_urls
